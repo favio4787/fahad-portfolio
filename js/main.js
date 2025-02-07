@@ -228,4 +228,9 @@ document.addEventListener('mousemove', e => {
 
     document.documentElement.style.setProperty('--move-x', moveX + 'px');
     document.documentElement.style.setProperty('--move-y', moveY + 'px');
+});
+
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    preloader.style.display = 'none'; // Hide the loader after the page is fully loaded
 }); 
