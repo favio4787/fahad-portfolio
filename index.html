@@ -1,287 +1,553 @@
-<!doctype html>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/favicon.png">
-    <title>Fahad-Frontend Developer</title>
-    <link media="all" rel="stylesheet" type="text/css" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahad Nadeem - Frontend Developer</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Your compiled CSS -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
-    <div id="wrapper">
-        <header id="header" class="canvas__wrapper">
-            <canvas id="canvas"></canvas>
-            <div class="nav-sidebar">
-                <a href="#" class="nav-opener"><i class="icon-bars"></i> </a>
-                <nav id="nav">
-                    <a href="#" class="nav-opener"><i class="fal fa-close"></i></a>
-                    <div class="nav-box">
-                        <h1>Fahad</h1>
-                        <ul class="nav">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Video</a> </li>
-                            <li><a href="#">Hire me</a> </li>
-                        </ul>
-                        <ul class="social-links">
-                            <li><a href="https://www.linkedin.com/in/fahadnadeem"><i class="fab fa-linkedin-in"></i> </a></li>
-                            <li><a href="skype:live:.cid.123456789?chat"><i class="fab fa-skype"></i> </a></li>
-                            <li><a href="mailto:nfahad4787@gmail.com">nfahad4787@gmail.com</a> </li>
-                            <li><a href="#"> 0335 8735635</a> </li>
-                        </ul>
-                    </div>
-                </nav>
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/fahadnadeem"><i class="fab fa-linkedin-in"></i> </a></li>
-                    <li><a href="skype:live:.cid.123456789?chat"><i class="fab fa-skype"></i> </a></li>
-                </ul>
-            </div>
-            <div class="top-header">
-                <div class="container">
-                    <div class="line-box crawlline">
-                        <div class="line-wrap">
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
-                            <p>Let's talk about your new project</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-square">
-                        <i class="icon-email"></i>
-                        Hire me
-                    </a>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">FN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <div class="tag-line">Welcome to my portfolio</div>
+                <h1>Creating <span class="gradient-text">Digital Experiences</span> Through Code</h1>
+                <div class="subtitle">Frontend Developer</div>
+                <p>I craft modern, responsive websites with clean code and pixel-perfect design implementation.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get in Touch</a>
                 </div>
             </div>
-            <div class="main-header">
-                <div class="container">
-                    <div class="logo">
-                        <a href="#">
-                            <svg viewBox="0 0 100 100" width="110" height="110">
-                                <defs>
-                                    <path id="circle"
-                                        d="
-                                M 50, 50
-                                m -37, 0
-                                a 37,37 0 1,1 74,0
-                                a 37,37 0 1,1 -74,0" />
-                                </defs>
-                                <text font-size="16">
-                                    <textPath xlink:href="#circle">
-                                        Frontend - Developer
-                                    </textPath>
-                                </text>
+            <div class="visual-content">
+                <div class="hero-image">
+                    <!-- Developer SVG -->
+                    <svg class="main-image" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M250 470C371.503 470 470 371.503 470 250C470 128.497 371.503 30 250 30C128.497 30 30 128.497 30 250C30 371.503 128.497 470 250 470Z" fill="url(#paint0_linear)"/>
+                        <path d="M180 200L140 250L180 300" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M320 200L360 250L320 300" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M280 160L220 340" stroke="white" stroke-width="20" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="250" y1="30" x2="250" y2="470" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF3366"/>
+                                <stop offset="1" stop-color="#7000FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <!-- React Icon -->
+                    <svg class="floating-icon icon-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z" fill="#61DAFB"/>
+                        <path d="M12 21.5C11.4477 21.5 11 21.0523 11 20.5V3.5C11 2.94772 11.4477 2.5 12 2.5C12.5523 2.5 13 2.94772 13 3.5V20.5C13 21.0523 12.5523 21.5 12 21.5Z" fill="#61DAFB"/>
+                        <path d="M3.5 12C3.5 11.4477 3.94772 11 4.5 11H19.5C20.0523 11 20.5 11.4477 20.5 12C20.5 12.5523 20.0523 13 19.5 13H4.5C3.94772 13 3.5 12.5523 3.5 12Z" fill="#61DAFB"/>
+                    </svg>
+
+                    <!-- Vue Icon -->
+                    <svg class="floating-icon icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.8 6.4L20 7.2L16 10.4L16.8 15.6L12 13.2L7.2 15.6L8 10.4L4 7.2L9.2 6.4L12 2Z" fill="#41B883"/>
+                    </svg>
+
+                    <!-- JavaScript Icon -->
+                    <svg class="floating-icon icon-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3H21V21H3V3Z" fill="#F7DF1E"/>
+                        <path d="M16.5 16.5C16.5 17.8807 15.3807 19 14 19C12.6193 19 11.5 17.8807 11.5 16.5C11.5 15.1193 12.6193 14 14 14" stroke="black" stroke-width="2"/>
+                        <path d="M8 14V19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+                    <!-- Code Icon -->
+                    <svg class="floating-icon icon-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 18L22 12L16 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 6L2 12L8 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <div class="glow-effect"></div>
+                </div>
+
+                <!-- Experience Card -->
+                <div class="experience-card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="url(#paint1_linear)"/>
+                        <path d="M12 20L16 24L28 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="paint1_linear" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF3366"/>
+                                <stop offset="1" stop-color="#7000FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="text">
+                        <h4>3+ Years</h4>
+                        <p>Experience</p>
+                    </div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="projects-card">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="url(#paint2_linear)"/>
+                        <path d="M20 10L24 18H16L20 10Z" fill="white"/>
+                        <path d="M14 22L18 30H10L14 22Z" fill="white"/>
+                        <path d="M26 22L30 30H22L26 22Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="paint2_linear" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF3366"/>
+                                <stop offset="1" stop-color="#7000FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="text">
+                        <h4>50+ Projects</h4>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <!-- Animated Background SVG -->
+            <div class="background-animation">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="background-blob">
+                    <path fill="#FF3366" d="M45.7,-58.8C59.9,-51.2,72.3,-37.9,77.4,-22.1C82.4,-6.3,80.2,11.8,73.1,27.7C66,43.7,54.1,57.4,39.8,64.1C25.4,70.8,8.6,70.5,-6.9,67.8C-22.4,65.1,-36.6,60,-48.1,50.7C-59.5,41.4,-68.3,27.9,-71.8,12.7C-75.3,-2.5,-73.5,-19.4,-65.8,-32.5C-58.1,-45.6,-44.4,-54.8,-30.8,-62.5C-17.1,-70.2,-3.5,-76.3,8.9,-73.8C21.3,-71.3,31.5,-66.3,45.7,-58.8Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline">
+                    <svg width="100" height="10" viewBox="0 0 100 10">
+                        <path d="M0 5L100 5" stroke="url(#gradient-line)" stroke-width="2">
+                            <animate attributeName="stroke-dasharray" from="0,100" to="100,100" dur="1.5s" fill="freeze" />
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <!-- Profile Section -->
+                <div class="profile-section" data-aos="fade-right">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <svg class="profile-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="url(#gradient-profile)" d="M40.7,-62.9C54.9,-54.4,69.8,-46.7,76.4,-34.4C83,-22.1,81.3,-5.2,76.3,9.7C71.3,24.5,63,37.3,52.4,47.8C41.8,58.3,28.9,66.5,14.2,70.7C-0.5,75,-17,75.3,-31.7,69.9C-46.5,64.5,-59.5,53.4,-67.4,39.3C-75.4,25.2,-78.3,8,-74.8,-7.2C-71.3,-22.4,-61.3,-35.7,-49.3,-44.8C-37.3,-53.9,-23.2,-58.8,-8.5,-61.8C6.2,-64.8,26.5,-71.4,40.7,-62.9Z" transform="translate(100 100)" />
                             </svg>
-                            <i class="icon-mapmarker"></i>
+                            <img src="./img/profile.jpg" width="50" height="50" style="border-radius: 50%;" alt="Profile Picture" />
+                        </div>
+                        <div class="experience-counter">
+                            <div class="counter">
+                                <span class="number" data-target="5">3</span>
+                                <span class="plus">+</span>
+                            </div>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Section -->
+                <div class="info-section" data-aos="fade-left">
+                    <div class="bio">
+                        <h3>Frontend Developer</h3>
+                        <p>Hello! I'm a dedicated frontend developer with a passion for crafting beautiful and functional web applications. With over 3 years of experience, I specialize in creating responsive designs and seamless user experiences.</p>
+                        <p>I have a strong foundation in HTML, CSS, and JavaScript, and I love using frameworks like React and Next.js to build dynamic applications. My goal is to bridge the gap between design and technology, ensuring that every project I work on is both visually appealing and highly functional.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up">
+                            <h4>HTML5</h4>
+                            <p>Markup language for creating web pages.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <h4>CSS3</h4>
+                            <p>Style sheet language for designing web pages.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <h4>JavaScript</h4>
+                            <p>Programming language for interactive web applications.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <h4>React.js</h4>
+                            <p>JavaScript library for building user interfaces.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                            <h4>Next.js</h4>
+                            <p>Framework for server-rendered React applications.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                            <h4>Redux</h4>
+                            <p>State management library for JavaScript applications.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                            <h4>Tailwind CSS</h4>
+                            <p>Utility-first CSS framework for rapid UI development.</p>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                            <h4>Git</h4>
+                            <p>Version control system for tracking changes in code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <svg class="section-icon" viewBox="0 0 100 100" width="50" height="50">
+                <circle class="circle-animation" cx="50" cy="50" r="45" stroke="url(#gradientStroke)" stroke-width="2" fill="none"/>
+                <path class="code-path" d="M30 50L45 65L70 35" stroke="#FF3366" stroke-width="3" fill="none"/>
+            </svg>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1: E-commerce -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://modern-ecommerce.com" target="_blank" aria-label="View Live Demo">
+                            <svg class="external-icon" viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </div>
-                    <div class="banner-text">
-                        <h1>Hi, <br>
-                            I’m <strong>Fahad </strong> Nadeem <br>
-                            <div class="typewrite" data-period="2000" data-type='[ " Build interactive UIs. ", " create seamless experiences. ", " design responsive layouts. ", " optimize website performance. " ]'>
-                                <span class="wrap"></span>
-                            </div>
-                        </h1>
-                        My Clients:
-                        <div class="logo-slider">
-                            <div>
-                                <div class="logo-box">
-                                    <img src="images/logic-wind.svg">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="logo-box">
-                                    <img src="images/neo.svg">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="logo-box">
-                                    <img src="images/meme.png">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="logo-box">
-                                    <img src="images/lumis.svg">
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <h3>Modern E-commerce Platform</h3>
+                <p>A fully responsive e-commerce platform with cart functionality, user authentication, and payment integration using Stripe.</p>
+                <div class="tech-stack">
+                    <span>Next.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Redux</span>
+                    <span>Stripe</span>
+                </div>
+            </div>
 
+            <!-- Project 2: Portfolio Template -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Portfolio Template</h3>
+                <p>A modern, responsive portfolio template with dark/light mode, smooth scrolling, and animated sections.</p>
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap 5</span>
+                </div>
+            </div>
 
+            <!-- Project 3: Real Estate Website -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Real Estate Website</h3>
+                <p>A feature-rich real estate website with property listings, search functionality, and interactive maps.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Leaflet.js</span>
+                    <span>Firebase</span>
+                </div>
+            </div>
+
+            <!-- Project 4: Admin Dashboard -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Admin Dashboard</h3>
+                <p>A comprehensive admin dashboard with data visualization, user management, and real-time analytics.</p>
+                <div class="tech-stack">
+                    <span>Next.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Chart.js</span>
+                    <span>React Query</span>
+                </div>
+            </div>
+
+            <!-- Project 5: Weather App -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Weather App</h3>
+                <p>A beautiful weather application with 7-day forecast, location search, and animated weather icons.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>CSS Modules</span>
+                    <span>OpenWeather API</span>
+                    <span>Framer Motion</span>
+                </div>
+            </div>
+
+            <!-- Project 6: Task Management App -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-header">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M2 6C2 4.89543 2.89543 4 4 4H9L11 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" fill="url(#folderGradient)"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" aria-label="View Source Code">
+                            <svg class="github-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Task Management App</h3>
+                <p>A Kanban-style task management application with drag-and-drop functionality and team collaboration features.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Bootstrap</span>
+                    <span>React DnD</span>
+                    <span>LocalStorage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="work-experience" class="work-experience">
+        <div class="section-header">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="title-underline">
+                <svg width="100" height="10" viewBox="0 0 100 10">
+                    <path d="M0 5L100 5" stroke="url(#gradient-line)" stroke-width="2">
+                        <animate attributeName="stroke-dasharray" from="0,100" to="100,100" dur="1.5s" fill="freeze" />
+                    </path>
+                </svg>
+            </div>
+        </div>
+    
+        <div class="experience-list">
+            <div class="experience-item" data-aos="fade-up">
+                <div class="experience-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#FF3366"/>
+                        <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="experience-details">
+                    <h3>Frontend Developer</h3>
+                    <p>Software Alliance,Lahore - Dec 2021 to Present</p>
+                    <p>Developing responsive web applications using React and Next.js, focusing on user experience and performance optimization.</p>
+                </div>
+            </div>
+    
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="experience-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#FF3366"/>
+                        <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="experience-details">
+                    <h3>Freelance Frontend Developer</h3>
+                    <p>Self-Employed - Feb 2023 to Present</p>
+                    <p>Assisted in developing and maintaining websites, gaining hands-on experience with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <!-- Add your SVG icon here -->
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L14.8 6.4L20 7.2L16 10.4L16.8 15.6L12 13.2L7.2 15.6L8 10.4L4 7.2L9.2 6.4L12 2Z" fill="#41B883"/>
+                        </svg>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript, React.js, Next.js, Redux</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <!-- Add your SVG icon here -->
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L14.8 6.4L20 7.2L16 10.4L16.8 15.6L12 13.2L7.2 15.6L8 10.4L4 7.2L9.2 6.4L12 2Z" fill="#FF3366"/>
+                        </svg>
+                    </div>
+                    <div class="skill-text">
+                        <h3>UI/UX Design</h3>
+                        <p>Bootstrap, Tailwind CSS, Material-UI, SASS, Responsive Design</p>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <!-- Add your SVG icon here -->
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L14.8 6.4L20 7.2L16 10.4L16.8 15.6L12 13.2L7.2 15.6L8 10.4L4 7.2L9.2 6.4L12 2Z" fill="#F7DF1E"/>
+                        </svg>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Tools & Platforms</h3>
+                        <p>Git, Webpack, npm, RESTful APIs, GraphQL</p>
                     </div>
                 </div>
             </div>
-            <div class="award-holder">
-                <div class="container">
-                    <a href="#" class="award-btn"><i class="fal fa-times"></i> </a>
-                    <div class="row">
-                        <div class="col col-md-6">
-                            <h1>Achievements & Awards</h1>
-                            <p>Successfully delivered 50+ high-quality web development projects, leading to a 95% client satisfaction rate. Recognized for optimizing website performance, improving user engagement, and delivering responsive designs using modern frontend technologies.</p>
+        </div>
+    </section>
 
-                            <ul class="social-links">
-                                <li><a href="https://www.linkedin.com/in/fahadnadeem"><i class="fab fa-linkedin-in"></i> </a></li>
-                                <li><a href="skype:live:.cid.123456789?chat"><i class="fab fa-skype"></i> </a></li>
-                                <li><a href="mailto:nfahad4787@gmail.com">nfahad4787@gmail.com</a> </li>
-                                <li><a href="tel:+923358735635"> 03358735635</a> </li>
-                            </ul>
-                        </div>
-                        <div class="col col-md-6">
-                            <ul class="award-list">
-                                <li><span>Excellence</span></li>
-                                <li><span>Freelancer</span></li>
-                                <li><span>Satisfaction</span></li>
-                                <li><span>Optimization</span></li>
-                                <li><span>Achievement</span></li>
-                                <li><span>Delivery</span></li>
-                            </ul>
-
-                        </div>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="get-in-touch">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>If you have any questions or just want to say hi, feel free to reach out!</p>
+                    <a href="mailto:your-email@example.com" class="contact-button">Contact Me</a>
+                </div>
+                <div class="contact-icon">
+                    <!-- Add your animated SVG icon here -->
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        class="animated-icon"
+                    >
+                        <circle cx="12" cy="12" r="10" fill="#FF3366" />
+                    </svg>
                 </div>
             </div>
-            <a href="#" class="award-btn">
-                <span>Awards <img src="images/award.svg"></span>
-            </a>
+        </div>
+    </section>
 
-        </header>
-
-        <main id="main">
-            <section class="section">
-                <div class="container">
-                    <div class="row about align-items-center mb-5">
-                        <div class="col col-md-6">
-                            <h1>About me.</h1>
-                            <p>A Passionate Front-End Developer with over 3+ years of experience in designing, developing, and deploying cutting-edge web applications. With a keen eye for detail and user experience, I have helped several organizations create dynamic, responsive, and scalable websites and applications using modern technologies like React.js, Vue.js, and Next.js.</p>
-                            <p>Highly skilled in front-end development, UI/UX design, and responsive web design. Throughout my career, I've worked closely with cross-functional teams to ensure seamless user experiences and efficient codebase management, consistently delivering high-quality products.</p>
-                            <p>A trusted collaborator and strategic thinker, always focused on translating business needs into functional, efficient, and visually appealing web solutions. My expertise lies in bridging the gap between design and development to create exceptional user interfaces.</p>
-                            <p>
-                                <span class="text-blue">Let’s talk about your next web project.</span><br>
-                                Bring me your ideas, and I’ll bring them to life with clean, scalable, and efficient code.
-                            </p>
-
-                            <a href="tel:03358735635" class="btn">Let's Talk</a>
-                        </div>
-                        <div class="col col-md-6">
-                            <div id='tech-js' style="font-size: 22px; font-weight: bold;"></div>
-                        </div>
-                    </div>
-                    <div class="row text-center mb-5">
-                        <div class="col-md-3 mb-3">
-                            <h2 class="text-blue">3+</h2>
-                            <h5>Year of experience</h5>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <h2 class="text-blue">100+</h2>
-                            <h5>Complete Projects</h5>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <h2 class="text-blue">MANY</h2>
-                            <h5>Happy Clients</h5>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h2 class="text-blue">10+</h2>
-                            <h5>Awards</h5>
-                        </div>
-                    </div>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="mailto:nfahad47874@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="section portfolio">
-                <div class="container">
-                    <div class="section-header">
-                        <h1>My Portfolio.</h1>
-                        <p>Here is the portfolio of my most recent successful projects.</p>
-                        <p>Started from scratch and made them a winning product in the online market with my design, marketing, and management expertise. </p>
-                    </div>
+                <p>&copy; 2024 Fahad Nadeem. All rights reserved.</p>
+                <div class="footer-graphics">
+                    <svg class="footer-icon react-icon" viewBox="0 0 64 64" fill="none">
+                        <path d="M32 2C15.5 2 2 15.5 2 32s13.5 30 30 30 30-13.5 30-30S48.5 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z" fill="#61DAFB"/>
+                        <path d="M32 12c-11.1 0-20 8.9-20 20s8.9 20 20 20 20-8.9 20-20-8.9-20-20-20zm0 36c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z" fill="#61DAFB"/>
+                        <path d="M32 20c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12z" fill="#FFFFFF"/>
+                    </svg>
+                    <svg class="footer-icon next-icon" viewBox="0 0 64 64" fill="none">
+                        <path d="M32 2C15.5 2 2 15.5 2 32s13.5 30 30 30 30-13.5 30-30S48.5 2 32 2zm0 56c-14.3 0-26-11.7-26-26S17.7 6 32 6s26 11.7 26 26-11.7 26-26 26z" fill="#000000"/>
+                        <path d="M32 12l-8 8h6v16h4V20h6l-8-8z" fill="#000000"/>
+                    </svg>
                 </div>
-                <div class="profile-holder">
-                    <div class="row">
-                        <div class="col col-md-6">
-                            <div id="list-example" class="list-group">
-                                <a class="list-group-item list-group-item-action active" href="#list-item-1"><img src="images/sa-logo.svg"></a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-2"><img src="images/meme.png"></a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-3"><img src="images/lumis.svg"></a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-4"><img src="images/neo.svg"></a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-5"><img src="images/logic-wind.svg"></a>
-                            </div>
-                        </div>
-                        <div class="col col-md-6">
-                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                                <!-- Software Alliance Project -->
-                                <div id="list-item-1" class="box active">
-                                    <h5 class="text-blue">WEB & MOBILE APPLICATIONS</h5>
-                                    <h2>Software Alliance - IT Company Portfolio</h2>
-                                    <p>Developed and maintained the company’s portfolio website using Next.js and Firebase, improving SEO by 30% and boosting site traffic. Ensured optimal performance, SEO, and a seamless user experience with a focus on responsive design, scalability, and accessibility. Leveraged Redux for state management and SCSS for efficient styling and layout.</p>
-                                </div>
-                                <!-- Memee Project -->
-                                <div id="list-item-2" class="box active">
-                                    <h5 class="text-blue">WEB APPLICATION</h5>
-                                    <h2>Memee - Meme Website</h2>
-                                    <p>Developed a meme website using React.js with real-time updates and user-generated content. Utilized Redux for state management and SCSS for styling, ensuring a responsive and efficient platform. Focused on delivering a seamless user experience with optimized performance.</p>
-                                </div>
-                                <!-- Lumis Pro Consulting SP ZOO -->
-                                <div id="list-item-3" class="box active">
-                                    <h5 class="text-blue">WEB DESIGN</h5>
-                                    <h2>Lumis Pro Consulting SP ZOO - Corporate Website Template</h2>
-                                    <p>Designed and developed a professional corporate website template for Lumis Pro Consulting. Incorporated animations using JavaScript for a dynamic user experience. Utilized SCSS for modular and efficient styling, ensuring responsiveness and optimal performance across devices.</p>
-                                </div>
-                                <!-- Neoman Project -->
-                                <div id="list-item-4" class="box active">
-                                    <h5 class="text-blue">WEB APPLICATION</h5>
-                                    <h2>Neoman - News Blog Website</h2>
-                                    <p>Developed a news blog website using Next.js, integrating Redux for efficient state management across components. Implemented dynamic content loading and real-time updates to ensure fresh and engaging user experiences. Focused on responsive design and optimized performance, ensuring seamless browsing across devices. Applied best practices for SEO to improve visibility and user engagement.</p>
-                                </div>
-                                <!-- Logic Wind Solutions Project -->
-                                <div id="list-item-5" class="box active">
-                                    <h5 class="text-blue">WEB DESIGN</h5>
-                                    <h2>Logic Wind Solutions - Business Solutions Template</h2>
-                                    <p>Designed and developed a professional template for Logic Wind Solutions, highlighting their expertise in business growth and transformative technologies. Focused on strategic implementation and long-term value, helping businesses enhance operational efficiency and gain a competitive advantage. Created a modern, responsive design with optimized performance for seamless user experience across devices.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </footer>
 
-            </section>
-            <section class="section c-info">
-                <div class="container">
-                    <div class="section-header">
-                        <div class="c-logo">
-                            <a href="https://www.linkedin.com/in/fahad-nadeem-b811321a9/">
-                                <img style="border-radius: 50%;" src="images/fahad.jpg" alt="Your Logo" />
-                            </a>
-                        </div>
-                        <h1>Fahad Nadeem</h1>
-                        <p>Frontend Developer | React.js, Next.js, Redux Expert</p>
-                        <p>With over 3 years of experience in frontend development, I specialize in creating dynamic, responsive websites using modern technologies such as React.js, Next.js, and Redux. My focus is on optimizing website performance, implementing SEO strategies, and ensuring seamless user experiences across devices.</p>
-                        <p>I'm passionate about bringing innovative solutions to life and collaborating with cross-functional teams to deliver high-quality, scalable projects. Let's work together to bring your ideas to life!</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-        <script type="text/javascript" src='js/tech-js.js'></script>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script type="text/javascript" src="js/mouse-trail.min.js"></script>
-
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
-</html>
+</html> 
